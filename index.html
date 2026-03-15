@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S.M.A.R.T Royal Thai Army — Recruit Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="lt">
+  <button class="on" onclick="sL('en')" id="be">🇬🇧 EN</button>
+  <button onclick="sL('th')" id="bt">🇹🇭 TH</button>
+</div>
+<button class="nb" id="pv" onclick="go(-1)">&#8249;</button>
+<button class="nb" id="nx" onclick="go(1)">&#8250;</button>
+<div id="ctr">1 / 16</div>
+<div id="pb"><div id="pf"></div></div>
+
+<div id="sw">
+
+<!-- ═══ S1: TITLE ═══ -->
+<div class="sl on" id="s1">
+  <div class="emb">🎖️</div>
+  <div style="font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:6px;color:var(--gold);margin-bottom:12px" data-en="S.M.A.R.T ROYAL THAI ARMY" data-th="กองทัพบกไทย S.M.A.R.T">S.M.A.R.T ROYAL THAI ARMY</div>
+  <div class="mtl"><span data-en="RECRUIT" data-th="การฝึก">RECRUIT</span> <span style="color:var(--green)" data-en="TRAINING" data-th="ทหารใหม่">TRAINING</span></div>
+  <div style="font-size:16px;color:var(--muted);text-align:center;margin-top:10px" data-en="Official Training Manual — Command Structure & Field Doctrine" data-th="คู่มือการฝึกอบรมอย่างเป็นทางการ — โครงสร้างการบังคับบัญชาและหลักนิยมภาคสนาม">Official Training Manual — Command Structure &amp; Field Doctrine</div>
+  <div class="div"></div>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+    <div class="bdg" data-en="9TH INFANTRY DIVISION" data-th="กองพลทหารราบที่ ๙">9TH INFANTRY DIVISION</div>
+    <div class="bdg" data-en="2ND INFANTRY DIVISION" data-th="กองพลทหารราบที่ ๒">2ND INFANTRY DIVISION</div>
+    <div class="bdg" data-en="FIELD TRAINING" data-th="การฝึกภาคสนาม">FIELD TRAINING</div>
+    <div class="bdg" data-en="VEHICLE OPS" data-th="การปฏิบัติการยานพาหนะ">VEHICLE OPS</div>
+  </div>
+</div>
+
+<!-- ═══ S2: UNIT OVERVIEW ═══ -->
+<div class="sl" id="s2">
+  <div class="lbl" data-en="OVERVIEW" data-th="ภาพรวม">OVERVIEW</div>
+  <div class="ttl" data-en="Two Divisions — One Force" data-th="สองกองพล — หนึ่งกำลังรบ">Two Divisions — One Force</div>
+  <div class="rule"></div>
+  <div class="uc">
+    <div class="up n9">
+      <h3>9<sup>th</sup> Infantry Division</h3>
+      <div class="uth">กองพลทหารราบที่ ๙</div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.7" data-en="Rapid deployment, air assault & close combat division. Specializes in helicopter insertions and aggressive urban clearing." data-th="กองพลจู่โจมทางอากาศ เชี่ยวชาญการบุกโจมตีอย่างรวดเร็วด้วยเฮลิคอปเตอร์และการยึดพื้นที่เมือง">Rapid deployment, air assault &amp; close combat division.</p>
+      <div><span class="chip" data-en="Air Assault" data-th="จู่โจมทางอากาศ">Air Assault</span><span class="chip" data-en="Urban CQC" data-th="CQC ในเมือง">Urban CQC</span><span class="chip" data-en="Rapid Deploy" data-th="ส่งกำลังเร็ว">Rapid Deploy</span></div>
+    </div>
+    <div class="up n2">
+      <h3>2<sup>nd</sup> Infantry Division</h3>
+      <div class="uth">กองพลทหารราบที่ ๒</div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.7" data-en="Combined-arms mechanized division with cavalry squadrons. Provides armored maneuver, fire support and long-range recon." data-th="กองพลทหารราบผสมเหล่าพร้อมกองพันทหารม้า ดำเนินกลยุทธ์ยานเกราะและการลาดตระเวน">Combined-arms mechanized division with cavalry squadrons.</p>
+      <div><span class="chip" data-en="Mechanized" data-th="ยานยนต์">Mechanized</span><span class="chip" data-en="Cavalry" data-th="ทหารม้า">Cavalry</span><span class="chip" data-en="Recon" data-th="ลาดตระเวน">Recon</span></div>
+    </div>
+  </div>
+  <div style="margin-top:16px;width:100%;max-width:860px">
+    <div class="imgbox" style="max-width:500px;margin:0 auto">
+      <img src="images/imgSoldiers.png" alt="Soldiers">
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S3: 9ID COMMAND ═══ -->
+<div class="sl" id="s3">
+  <div class="lbl" data-en="9TH INFANTRY DIVISION" data-th="กองพลทหารราบที่ ๙">9TH INFANTRY DIVISION</div>
+  <div class="ttl" data-en="Command Structure" data-th="โครงสร้างการบังคับบัญชา">Command Structure</div>
+  <div class="rule"></div>
+  <div class="sc">
+    <div class="org">
+      <div class="olv">
+        <div class="ocard top">
+          <div class="rk" data-en="DIVISION HQ" data-th="กองบัญชาการกองพล">DIVISION HQ</div>
+          <div class="un">9th Infantry Division</div>
+          <div class="th">กองพลทหารราบที่ ๙</div>
+          <div class="rr"><span style="color:var(--muted)">CG — </span><span class="pr">MG notefsaw</span></div>
+          <div class="rr"><span style="color:var(--muted)">DCG — </span><span class="pr">COL(S) 338Lapau_Magnum</span></div>
+          <div class="rr"><span style="color:var(--muted)">CoS — </span><span class="va" data-en="Vacant" data-th="ว่าง">Vacant</span></div>
+        </div>
+      </div>
+      <div class="oc"></div>
+      <div class="hc">
+        <div class="ocard" style="border-color:#2d7a45;animation-delay:.1s">
+          <div class="rk" data-en="REGIMENT" data-th="กรม">REGIMENT</div>
+          <div class="un">19th Infantry Rgt</div>
+          <div class="th">กรมทหารราบที่ ๑๙</div>
+          <div class="rr"><span style="color:var(--muted)">CO — </span><span class="pr">LTC GildedMikado</span></div>
+          <div class="rr"><span style="color:var(--muted)">XO — </span><span class="va" data-en="Vacant" data-th="ว่าง">Vacant</span></div>
+          <div style="margin-top:5px;font-size:10px;color:var(--green)" data-en="★ Urban CQC" data-th="★ CQC ในเมือง">★ Urban CQC</div>
+        </div>
+        <div class="ocard" style="border-color:#2d7a45;animation-delay:.2s">
+          <div class="rk" data-en="REGIMENT" data-th="กรม">REGIMENT</div>
+          <div class="un">29th Infantry Rgt</div>
+          <div class="th">กรมทหารราบที่ ๒๙</div>
+          <div class="rr"><span style="color:var(--muted)">CO — </span><span class="pr">CPT KL7XD</span></div>
+          <div class="rr"><span style="color:var(--muted)">XO — </span><span class="va" data-en="Vacant" data-th="ว่าง">Vacant</span></div>
+          <div style="margin-top:5px;font-size:10px;color:var(--green)" data-en="★ Air Assault Std" data-th="★ มาตรฐานจู่โจมทางอากาศ">★ Air Assault Std</div>
+        </div>
+        <div class="ocard" style="border-color:#3a5068;animation-delay:.3s">
+          <div class="rk" data-en="BATTALION" data-th="กองพัน">BATTALION</div>
+          <div class="un">9th Aviation Bn</div>
+          <div class="th">กองพันบินที่ ๙</div>
+          <div class="rr"><span style="color:var(--muted)">CDR — </span><span class="pr">MG PABOSSPANAMA</span></div>
+          <div class="rr"><span style="color:var(--muted)">XO — </span><span class="pr">COL(S) Casanovapoint</span></div>
+          <div style="margin-top:5px;font-size:10px;color:var(--blue)" data-en="✈ Air Mobility" data-th="✈ การเคลื่อนย้ายทางอากาศ">✈ Air Mobility</div>
+        </div>
+        <div class="ocard" style="border-color:#4a3060;animation-delay:.4s">
+          <div class="rk" data-en="COMPANY" data-th="กองร้อย">COMPANY</div>
+          <div class="un">LRRP Co.</div>
+          <div class="th">กองร้อยลาดตระเวนระยะไกล</div>
+          <div class="rr"><span style="color:var(--muted)">CO — </span><span class="pr">SM2 husain712</span></div>
+          <div class="rr"><span style="color:var(--muted)">XO — </span><span class="va" data-en="Vacant" data-th="ว่าง">Vacant</span></div>
+          <div style="margin-top:5px;font-size:10px;color:#b06bd5" data-en="🔭 Long Range Recon" data-th="🔭 ลาดตระเวนระยะไกล">🔭 Long Range Recon</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S4: 9ID TRAINING ═══ -->
+<div class="sl" id="s4">
+  <div class="lbl" data-en="9ID — DOCTRINE" data-th="9ID — หลักนิยม">9ID — DOCTRINE</div>
+  <div class="ttl" data-en="Training Standards" data-th="มาตรฐานการฝึก">Training Standards</div>
+  <div class="rule"></div>
+  <div class="sc">
+    <div class="tl">
+      <div class="ti" style="animation-delay:.0s">
+        <div class="tico">🎯</div>
+        <div><div class="tiT" data-en="Fire Discipline" data-th="วินัยในการยิง">Fire Discipline</div>
+        <div class="tiD" data-en="Machine gunners fire 3–5 round bursts to conserve ammo and maintain accuracy." data-th="พลปืนกลยิงเป็นชุด 3–5 นัดเพื่อประหยัดกระสุนและรักษาความแม่นยำ">Machine gunners fire 3–5 round bursts to conserve ammo and maintain accuracy.</div></div>
+      </div>
+      <div class="ti" style="animation-delay:.1s">
+        <div class="tico">💥</div>
+        <div><div class="tiT" data-en="Rapid Breaching & Clearing" data-th="การเปิดทางและการตรวจค้นอย่างรวดเร็ว">Rapid Breaching &amp; Clearing</div>
+        <div class="tiD" data-en="Unlike SF tactics (CAG/Delta), 9ID prioritizes speed and aggression while minimizing casualties." data-th="ต่างจากยุทธวิธีกองกำลังพิเศษ 9ID ให้ความสำคัญกับความเร็วและความรุนแรง ลดการสูญเสีย">Unlike SF tactics (CAG/Delta), 9ID prioritizes speed and aggression while minimizing casualties.</div></div>
+      </div>
+      <div class="ti" style="animation-delay:.2s">
+        <div class="tico">🚁</div>
+        <div><div class="tiT" data-en="Helicopter Operations" data-th="การปฏิบัติการเฮลิคอปเตอร์">Helicopter Operations</div>
+        <div class="tiD" data-en="Efficient mounting/dismounting with cover. Secure LZs with smoke marking. Maintain 360° awareness during extraction." data-th="ขึ้น-ลงพร้อมการคุ้มกัน ป้องกัน LZ ด้วยควันสัญญาณ รักษาความตื่นตัว 360° ระหว่างรอถอนตัว">Efficient mounting/dismounting with cover. Secure LZs with smoke marking.</div></div>
+      </div>
+      <div class="ti" style="animation-delay:.3s">
+        <div class="tico">🏥</div>
+        <div><div class="tiT" data-en="Medical Support" data-th="การสนับสนุนทางการแพทย์">Medical Support</div>
+        <div class="tiD" data-en="If a map includes ACS or MopMed, prior training is recommended for all personnel." data-th="หากแผนที่มี ACS หรือ MopMed แนะนำให้บุคลากรทุกคนรับการฝึกล่วงหน้า">If a map includes ACS or MopMed, prior training is recommended for all personnel.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S5: 2ID COMMAND ═══ -->
+<div class="sl" id="s5">
+  <div class="lbl" data-en="2ND INFANTRY DIVISION" data-th="กองพลทหารราบที่ ๒">2ND INFANTRY DIVISION</div>
+  <div class="ttl" data-en="Command Structure" data-th="โครงสร้างการบังคับบัญชา">Command Structure</div>
+  <div class="rule" style="margin-bottom:14px"></div>
+  <div class="sc">
+    <div class="org">
+      <div class="olv">
+        <div class="ocard top" style="border-color:var(--gold)">
+          <div class="rk" data-en="DIVISION HQ" data-th="กองบัญชาการกองพล">DIVISION HQ</div>
+          <div class="un">2nd Infantry Division</div>
+          <div class="th">กองพลทหารราบที่ ๒</div>
+          <div class="rr"><span style="color:var(--muted)">A/CG — </span><span class="pr">DCiC Boroou</span></div>
+          <div class="rr"><span style="color:var(--muted)">DCG — </span><span class="va" data-en="Vacant" data-th="ว่าง">Vacant</span></div>
+          <div class="rr"><span style="color:var(--muted)">CoS — </span><span class="va" data-en="Vacant" data-th="ว่าง">Vacant</span></div>
+        </div>
+      </div>
+      <div class="oc2"></div>
+      <div class="hc hc2">
+        <div class="ocard" style="border-color:#4a6040;animation-delay:.1s">
+          <div class="rk" data-en="REGIMENT" data-th="กรม">REGIMENT</div>
+          <div class="un">12th Infantry Rgt</div>
+          <div class="th">กรมทหารราบที่ ๑๒</div>
+          <div class="rr"><span style="color:var(--muted)">CO — </span><span class="pr">2LT P_JokerGuy</span></div>
+          <div class="rr"><span style="color:var(--muted)">XO — </span><span class="va" data-en="Vacant" data-th="ว่าง">Vacant</span></div>
+        </div>
+        <div class="ocard" style="border-color:#4a6040;animation-delay:.2s">
+          <div class="rk" data-en="REGIMENT" data-th="กรม">REGIMENT</div>
+          <div class="un">21st Infantry Rgt</div>
+          <div class="th">กรมทหารราบที่ ๒๑</div>
+          <div class="rr"><span style="color:var(--muted)">CO — </span><span class="pr">CPT I_hateRoblox3000</span></div>
+          <div class="rr"><span style="color:var(--muted)">XO — </span><span class="va" data-en="Vacant" data-th="ว่าง">Vacant</span></div>
+        </div>
+        <div class="ocard" style="border-color:#6a5020;animation-delay:.3s">
+          <div class="rk" data-en="CAVALRY SQN" data-th="กองพันทหารม้า">CAVALRY SQN</div>
+          <div class="un">2nd Cavalry Sqn</div>
+          <div class="th">กองพันทหารม้าที่ ๒</div>
+          <div class="rr"><span style="color:var(--muted)">CDR — </span><span class="pr">MAJ tordXDtygggg</span></div>
+          <div class="rr"><span style="color:var(--muted)">XO — </span><span class="va" data-en="Vacant" data-th="ว่าง">Vacant</span></div>
+          <div style="margin-top:5px;font-size:10px;color:var(--gold)">🐴 Cavalry</div>
+        </div>
+        <div class="ocard" style="border-color:#6a5020;animation-delay:.4s">
+          <div class="rk" data-en="CAVALRY SQN" data-th="กองพันทหารม้า">CAVALRY SQN</div>
+          <div class="un">30th Cavalry Sqn</div>
+          <div class="th">กองพันทหารม้าที่ ๓๐</div>
+          <div class="rr"><span style="color:var(--muted)">CDR — </span><span class="pr">CPT 4R_UN1</span></div>
+          <div class="rr"><span style="color:var(--muted)">XO — </span><span class="va" data-en="Vacant" data-th="ว่าง">Vacant</span></div>
+          <div style="margin-top:5px;font-size:10px;color:var(--gold)">🐴 Cavalry</div>
+        </div>
+        <div class="ocard" style="border-color:#4a3060;animation-delay:.5s">
+          <div class="rk" data-en="COMPANY" data-th="กองร้อย">COMPANY</div>
+          <div class="un">LRRP Co.</div>
+          <div class="th">กองร้อยลาดตระเวนระยะไกล</div>
+          <div class="rr"><span style="color:var(--muted)">CO — </span><span class="pr">CPT ACHI50</span></div>
+          <div class="rr"><span style="color:var(--muted)">XO — </span><span class="pr">1LT Tonoarwe1122</span></div>
+          <div style="margin-top:5px;font-size:10px;color:#b06bd5" data-en="🔭 Long Range Recon" data-th="🔭 ลาดตระเวนระยะไกล">🔭 Long Range Recon</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:14px;width:100%;max-width:820px">
+      <div class="imgbox"><img src="images/img2id.png" alt="2ID Structure"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S6: RANK ═══ -->
+<div class="sl" id="s6">
+  <div class="lbl" data-en="RANK SYSTEM" data-th="ระบบยศ">RANK SYSTEM</div>
+  <div class="ttl" data-en="Rank Progression" data-th="การเลื่อนยศ">Rank Progression</div>
+  <div class="rule"></div>
+  <div class="sc">
+    <div class="imgbox" style="max-width:860px"><img src="images/imgRank.png" alt="Rank Progression"></div>
+    <div style="margin-top:12px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;max-width:860px">
+      <div class="ic">
+        <div class="il" data-en="XP SOURCES" data-th="แหล่ง XP">XP SOURCES</div>
+        <ul>
+          <li data-en="1 XP / 20 min active in fort" data-th="1 XP / 20 นาที ในป้อม">1 XP / 20 min active in fort</li>
+          <li data-en="2 XP general training" data-th="2 XP การฝึกทั่วไป">2 XP general training</li>
+          <li data-en="4–5 XP scrim/operation" data-th="4–5 XP สคริม/ปฏิบัติการ">4–5 XP scrim/operation</li>
+          <li data-en="10 XP war" data-th="10 XP สงคราม">10 XP war</li>
+        </ul>
+      </div>
+      <div class="ic ac">
+        <div class="il" data-en="NCO PATH" data-th="เส้นทาง NCO">NCO PATH</div>
+        <ul>
+          <li>0 XP — Recruit (BMT)</li>
+          <li>1 XP — Private</li>
+          <li>50 XP — Lance Corporal</li>
+          <li>100 XP — Corporal</li>
+          <li>200 XP — Sergeant</li>
+        </ul>
+      </div>
+      <div class="ic">
+        <div class="il" data-en="OFFICER PATH" data-th="เส้นทางนายทหาร">OFFICER PATH</div>
+        <ul>
+          <li data-en="CPL+ → Officer School (CRMA)" data-th="CPL+ → โรงเรียนนายร้อย">CPL+ → Officer School</li>
+          <li>500 XP + 50 Merit → 1LT</li>
+          <li>600 XP + 100 Merit → CPT</li>
+          <li>800 XP + 200 Merit → MAJ</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S7: BODY PLACEMENT ═══ -->
+<div class="sl" id="s7">
+  <div class="lbl" data-en="FIELD TRAINING" data-th="การฝึกภาคสนาม">FIELD TRAINING</div>
+  <div class="ttl" data-en="Individual Body Placement" data-th="การวางตัวในภาคสนาม">Individual Body Placement</div>
+  <div class="rule"></div>
+  <div class="imgrow">
+    <div class="imgbox"><img src="images/imgPlace1.png" alt="Body Placement 1"></div>
+    <div class="imgbox"><img src="images/imgPlace2.png" alt="Body Placement 2"></div>
+  </div>
+  <div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:12px;width:100%;max-width:860px">
+    <div class="ic" style="border-color:var(--red)">
+      <div class="il" style="color:var(--red)" data-en="❌ INCORRECT" data-th="❌ ไม่ถูกต้อง">❌ INCORRECT</div>
+      <p data-en="Body exposed above cover. Enemy can see and hit you." data-th="ร่างกายโผล่พ้นที่กำบัง ศัตรูมองเห็นและยิงถูกคุณได้">Body exposed above cover. Enemy can see and hit you.</p>
+    </div>
+    <div class="ic" style="border-color:var(--green)">
+      <div class="il" style="color:var(--green)" data-en="✅ CORRECT" data-th="✅ ถูกต้อง">✅ CORRECT</div>
+      <p data-en="Only aim out from the side of cover. Minimize exposure while maintaining field of fire." data-th="โผล่เฉพาะส่วนที่จำเป็นออกด้านข้างที่กำบัง ลดการเปิดรับในขณะยิง">Only aim out from the side of cover. Minimize exposure.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S8: FORMATION ═══ -->
+<div class="sl" id="s8">
+  <div class="lbl" data-en="FIELD TRAINING" data-th="การฝึกภาคสนาม">FIELD TRAINING</div>
+  <div class="ttl" data-en="Combat Formation" data-th="การจัดรูปขบวนรบ">Combat Formation</div>
+  <div class="rule"></div>
+  <div class="imgbox" style="max-width:780px"><img src="images/imgForm.png" alt="Combat Formation"></div>
+  <div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:12px;width:100%;max-width:780px">
+    <div class="ic" style="border-color:var(--red)">
+      <div class="il" style="color:var(--red)" data-en="❌ CLUSTERED" data-th="❌ กระจุกตัว">❌ CLUSTERED</div>
+      <p data-en="Bunching up makes the squad a single grenade/mortar target." data-th="การกระจุกตัวทำให้หมู่รบกลายเป็นเป้าหมายของระเบิดหรือครก">Bunching up makes the squad a single grenade/mortar target.</p>
+    </div>
+    <div class="ic" style="border-color:var(--green)">
+      <div class="il" style="color:var(--green)" data-en="✅ SPREAD LINE" data-th="✅ แถวกระจาย">✅ SPREAD LINE</div>
+      <p data-en="Maintain spacing in a line. Leader in center. Each soldier covers a sector." data-th="รักษาระยะห่างในแนวเส้นตรง ผู้นำอยู่ตรงกลาง แต่ละคนดูแลเขตยิง">Maintain spacing in a line. Leader in center. Each soldier covers a sector.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S9: CAMOUFLAGE ═══ -->
+<div class="sl" id="s9">
+  <div class="lbl" data-en="FIELD TRAINING" data-th="การฝึกภาคสนาม">FIELD TRAINING</div>
+  <div class="ttl" data-en="Material Reflection & Camouflage" data-th="การสะท้อนแสงและการพรางตัว">Material Reflection &amp; Camouflage</div>
+  <div class="rule"></div>
+  <div class="imgbox" style="max-width:760px"><img src="images/imgCamo.png" alt="Camo Reflection"></div>
+  <div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:12px;width:100%;max-width:760px">
+    <div class="ic" style="border-color:var(--red)">
+      <div class="il" style="color:var(--red)" data-en="WITHOUT COVER — AVOID" data-th="ไม่มีผ้าพราง — หลีกเลี่ยง">WITHOUT COVER — AVOID</div>
+      <p data-en="Bare helmet creates a shine that makes you visible to enemies at range." data-th="หมวกเปล่าสะท้อนแสงทำให้ศัตรูมองเห็นคุณได้จากระยะไกล">Bare helmet creates a shine that makes you visible to enemies at range.</p>
+    </div>
+    <div class="ic" style="border-color:var(--green)">
+      <div class="il" style="color:var(--green)" data-en="WITH COVER — REQUIRED" data-th="ใส่ผ้าพราง — จำเป็น">WITH COVER — REQUIRED</div>
+      <p data-en="Helmet cover eliminates shine. Always wear your helmet cover in the field." data-th="ผ้าพรางหมวกขจัดการสะท้อนแสง ต้องสวมผ้าพรางหมวกเสมอในภาคสนาม">Helmet cover eliminates shine. Always wear it in the field.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S10: TACTICAL MAP ═══ -->
+<div class="sl" id="s10">
+  <div class="lbl" data-en="TACTICS" data-th="ยุทธวิธี">TACTICS</div>
+  <div class="ttl" data-en="Attack Formation — Tactical Map" data-th="รูปขบวนการบุก — แผนที่ยุทธวิธี">Attack Formation — Tactical Map</div>
+  <div class="rule"></div>
+  <div style="display:flex;gap:16px;width:100%;max-width:880px;align-items:flex-start">
+    <div class="imgbox" style="max-width:340px;flex-shrink:0"><img src="images/imgMap.png" alt="Tactical Map"></div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:9px">
+      <div class="ic ac">
+        <div class="il">ฐานออกตี — START BASE</div>
+        <p data-en="Assembly point where all units form up before the attack begins." data-th="จุดรวมพลก่อนเริ่มการบุก ทุกหน่วยรวมตัวที่นี่">Assembly point where all units form up before the attack.</p>
+      </div>
+      <div class="ic">
+        <div class="il">จุดแยก — SPLIT POINT</div>
+        <p data-en="Units diverge into 3 separate attack lanes. Each squad takes its own axis of advance." data-th="หน่วยแยกออกเป็น 3 ช่องทางบุก แต่ละหมู่ใช้แกนการรุกของตัวเอง">Units diverge into 3 separate attack lanes.</p>
+      </div>
+      <div class="ic">
+        <div class="il">แนวออกตี — ATTACK LINE</div>
+        <p data-en="Line of departure — all units cross simultaneously to begin the assault." data-th="แนวออกบุก ทุกหน่วยข้ามแนวนี้พร้อมกันเพื่อเริ่มการโจมตี">Line of departure — all units cross simultaneously.</p>
+      </div>
+      <div class="ic" style="border-color:var(--red)">
+        <div class="il" style="color:var(--red)">แนวประสานการปฏิบัติ — COORD LINE</div>
+        <p data-en="Final coordination line. Units must confirm position before crossing into the objective area." data-th="แนวประสานการปฏิบัติขั้นสุดท้าย หน่วยต้องยืนยันตำแหน่งก่อนข้ามเข้าพื้นที่เป้าหมาย">Final line. Confirm position before crossing into objective area.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S11: T-72 B3 ═══ -->
+<div class="sl" id="s11">
+  <div class="lbl" data-en="VEHICLE OPERATIONS" data-th="การปฏิบัติการยานพาหนะ">VEHICLE OPERATIONS</div>
+  <div class="ttl" data-en="T-72 B3 — Tank Operations" data-th="T-72 B3 — การปฏิบัติการรถถัง">T-72 B3 — Tank Operations</div>
+  <div class="rule"></div>
+  <div style="display:flex;gap:14px;width:100%;max-width:880px;align-items:flex-start">
+    <div style="flex:1;display:flex;flex-direction:column;gap:9px">
+      <div class="imgbox"><img src="images/imgT72.png" alt="T-72 B3"></div>
+      <div class="imgbox"><img src="images/imgT72fuel.png" alt="T-72 fuel"></div>
+    </div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:9px">
+      <div class="imgbox"><img src="images/imgT72ctrl.png" alt="T-72 controls"></div>
+      <div class="ic ac">
+        <div class="il" data-en="KEYBINDS" data-th="คีย์ควบคุม">KEYBINDS</div>
+        <table class="kbt">
+          <tr><td class="key">P</td><td class="desc" data-en="Parking Brake" data-th="เบรคจอด">Parking Brake</td></tr>
+          <tr><td class="key">L</td><td class="desc" data-en="Headlights" data-th="ไฟหน้า">Headlights</td></tr>
+          <tr><td class="key">H</td><td class="desc" data-en="Horn" data-th="แตร">Horn</td></tr>
+          <tr><td class="key">C</td><td class="desc" data-en="Coax Machine Gun" data-th="ปืนกลควบแกน">Coax Machine Gun</td></tr>
+          <tr><td class="key">G</td><td class="desc" data-en="Smoke Grenade" data-th="ระเบิดควัน">Smoke Grenade</td></tr>
+        </table>
+      </div>
+      <div class="ic" style="border-color:var(--red)">
+        <div class="il" style="color:var(--red)" data-en="⚠️ FUEL WARNING" data-th="⚠️ คำเตือนเชื้อเพลิง">⚠️ FUEL WARNING</div>
+        <p data-en="Tank consumes fuel unlike other vehicles. Always bring a gas can. Refuel at the gas cap on top." data-th="รถถังใช้เชื้อเพลิง นำถังน้ำมันสำรองไปด้วยเสมอ เติมที่ฝาถังน้ำมันบนตัวรถถัง">Tank consumes fuel. Always bring a gas can.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S12: T-80 OPLOT ═══ -->
+<div class="sl" id="s12">
+  <div class="lbl" data-en="VEHICLE IDENTIFICATION" data-th="การจำแนกยานพาหนะ">VEHICLE IDENTIFICATION</div>
+  <div class="ttl" data-en="T-80 Oplot — Main Battle Tank" data-th="T-80 Oplot — รถถังหลัก">T-80 Oplot — Main Battle Tank</div>
+  <div class="rule"></div>
+  <div style="display:flex;gap:14px;width:100%;max-width:900px">
+    <div class="imgbox" style="max-width:420px;flex-shrink:0"><img src="images/imgOplot.png" alt="T-80 Oplot"></div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:9px">
+      <div class="ic" style="border-color:var(--blue)">
+        <div class="il" style="color:var(--blue)" data-en="ROLE: DEFENSIVE" data-th="บทบาท: ป้องกัน">ROLE: DEFENSIVE</div>
+        <p data-en="The T-80 is a bulky and low-profile tank. It rarely exposes its sides. A distinctive periscope protrudes from the turret below the main gun." data-th="T-80 เป็นรถถังที่อ้วนและเตี้ย แทบไม่หันด้านข้างให้เห็น มีกล้องตรวจการณ์ยื่นออกมาใต้ป้อมปืน">The T-80 is a bulky and low-profile tank. It rarely exposes its sides.</p>
+      </div>
+      <div class="ic">
+        <div class="il" data-en="KEY FEATURES" data-th="คุณลักษณะสำคัญ">KEY FEATURES</div>
+        <ul>
+          <li data-en="Prominent periscope on turret front" data-th="กล้องส่องที่ยื่นออกมาด้านหน้าป้อมปืน">Prominent periscope on turret front</li>
+          <li data-en="Blue armor panels on vehicle sides" data-th="แผงเกราะสีน้ำเงินด้านข้างรถ">Blue armor panels on vehicle sides</li>
+          <li data-en="Distinctive engine sound" data-th="เสียงเครื่องยนต์เป็นเอกลักษณ์">Distinctive engine sound</li>
+          <li data-en="Red-orange IRCM flares for countermeasures" data-th="ไฟตา IRCM สีแดง-ส้ม สำหรับป้องกันจรวดนำวิถี">Red-orange IRCM flares</li>
+          <li data-en="Side skirts cover the full tracks" data-th="กระโปรงข้างปิดคลุมรถถังทั้งคัน">Side skirts cover the full tracks</li>
+        </ul>
+      </div>
+      <div class="ic ac">
+        <div class="il" data-en="TIP" data-th="เคล็ดลับ">TIP</div>
+        <p data-en="Never stay alone. Do not let allies fight alone — they will die easily." data-th="รถถังไม่ควรอยู่โดดเดี่ยว อย่าปล่อยให้เพื่อนสู้คนเดียว จะแพ้ง่าย">Never stay alone. Never let allies fight alone.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S13: BTR82A ═══ -->
+<div class="sl" id="s13">
+  <div class="lbl" data-en="VEHICLE IDENTIFICATION" data-th="การจำแนกยานพาหนะ">VEHICLE IDENTIFICATION</div>
+  <div class="ttl" data-en="BTR-82A — Infantry Fighting Vehicle" data-th="BTR-82A — รถลำเลียงพลหุ้มเกราะ">BTR-82A — Infantry Fighting Vehicle</div>
+  <div class="rule"></div>
+  <div style="display:flex;gap:14px;width:100%;max-width:900px">
+    <div class="imgbox" style="max-width:420px;flex-shrink:0"><img src="images/imgBTR82.png" alt="BTR82A"></div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:9px">
+      <div class="ic" style="border-color:#e07040">
+        <div class="il" style="color:#e07040" data-en="ROLE: OFFENSIVE" data-th="บทบาท: รุก">ROLE: OFFENSIVE</div>
+        <p data-en="8-wheeled IFV. Lower profile than BTR3E1. Uses older Russian BTR chassis." data-th="รถ IFV 8 ล้อ โปรไฟล์ต่ำกว่า BTR3E1 ใช้แชสซีส BTR เก่าของรัสเซีย">8-wheeled IFV. Lower profile than BTR3E1.</p>
+      </div>
+      <div class="ic">
+        <div class="il" data-en="KEY FEATURES" data-th="คุณลักษณะสำคัญ">KEY FEATURES</div>
+        <ul>
+          <li data-en="Slim turret — no grenade launcher" data-th="ป้อมปืนบางกว่า — ไม่มีเครื่องยิงจรวด">Slim turret — no grenade launcher</li>
+          <li data-en="Dual exhaust pipes (left & right)" data-th="ท่อไอเสียสองข้าง ซ้ายและขวา">Dual exhaust pipes both sides</li>
+          <li data-en="Main gun has no shield/guard" data-th="ปืนหลักไม่มีที่หุ้ม">Main gun has no shield</li>
+          <li data-en="Dark brown, all 8 wheels same color as body" data-th="สีน้ำตาลเข้ม ล้อทั้ง 8 สีเดียวกับตัวรถ">Dark brown, 8 wheels match body</li>
+          <li data-en="4-door: 2 front, 2 side" data-th="4 ประตู: หน้า 2 ข้าง 2">4-door: 2 front, 2 side</li>
+        </ul>
+      </div>
+      <div class="ic" style="border-color:var(--red)">
+        <div class="il" style="color:var(--red)">IFV ≠ TANK (รถถัง)</div>
+        <p data-en="IFV = Infantry Fighting Vehicle. Not a tank — different role and armor." data-th="IFV = รถลำเลียงพลหุ้มเกราะ ไม่ใช่รถถัง — บทบาทและเกราะต่างกัน">IFV = Infantry Fighting Vehicle. Not a tank.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S14: BTR3E1 ═══ -->
+<div class="sl" id="s14">
+  <div class="lbl" data-en="VEHICLE IDENTIFICATION" data-th="การจำแนกยานพาหนะ">VEHICLE IDENTIFICATION</div>
+  <div class="ttl" data-en="BTR-3E1 — Infantry Fighting Vehicle" data-th="BTR-3E1 — รถลำเลียงพลหุ้มเกราะ">BTR-3E1 — Infantry Fighting Vehicle</div>
+  <div class="rule"></div>
+  <div style="display:flex;gap:14px;width:100%;max-width:900px">
+    <div class="imgbox" style="max-width:420px;flex-shrink:0"><img src="images/imgBTR3.png" alt="BTR3E1"></div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:9px">
+      <div class="ic" style="border-color:var(--blue)">
+        <div class="il" style="color:var(--blue)" data-en="ROLE: DEFENSIVE" data-th="บทบาท: ป้องกัน">ROLE: DEFENSIVE</div>
+        <p data-en="8-wheeled IFV with a higher profile than BTR82A. Uses the Ukrainian BTR3 chassis." data-th="รถ IFV 8 ล้อ โปรไฟล์สูงกว่า BTR82A ใช้แชสซีส BTR3 ของยูเครน">8-wheeled IFV with higher profile. Ukrainian BTR3 chassis.</p>
+      </div>
+      <div class="ic">
+        <div class="il" data-en="KEY FEATURES" data-th="คุณลักษณะสำคัญ">KEY FEATURES</div>
+        <ul>
+          <li data-en="Taller turret with grenade launcher on side" data-th="ป้อมปืนสูงมีเครื่องยิงจรวดติดด้านข้าง">Taller turret with grenade launcher</li>
+          <li data-en="Single exhaust pipe on one side only" data-th="ท่อไอเสียเพียงด้านเดียว">Single exhaust pipe (one side)</li>
+          <li data-en="Larger body overall" data-th="ตัวรถใหญ่กว่าโดยรวม">Larger body overall</li>
+          <li data-en="All 8 wheels match camo pattern" data-th="ล้อทุกอันมีสีเดียวกับลายพราง">All 8 wheels match camo pattern</li>
+          <li data-en="Ukrainian camo pattern" data-th="ลายพรางยูเครน">Ukrainian camo pattern</li>
+        </ul>
+      </div>
+      <div class="ic" style="border-color:var(--red)">
+        <div class="il" style="color:var(--red)">IFV ≠ TANK (รถถัง)</div>
+        <p data-en="4-door: 2 front, 2 side. Remember — TANK ≠ IFV!" data-th="4 ประตู: หน้า 2 ข้าง 2 จำไว้ รถถัง ≠ IFV">4-door: 2 front, 2 side. รถถัง ≠ IFV!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S15: MEDICAL ═══ -->
+<div class="sl" id="s15">
+  <div class="lbl" data-en="MEDICAL TRAINING" data-th="การฝึกทางการแพทย์">MEDICAL TRAINING</div>
+  <div class="ttl" data-en="Combat Medical System" data-th="ระบบการแพทย์ในสนามรบ">Combat Medical System</div>
+  <div class="rule"></div>
+  <div class="sc">
+    <div class="imgbox" style="max-width:820px"><img src="images/imgMed.png" alt="Medical System"></div>
+    <div style="margin-top:12px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;max-width:820px">
+      <div class="ic ac">
+        <div class="il" data-en="BANDAGES" data-th="ผ้าพันแผล">BANDAGES</div>
+        <ul>
+          <li data-en="Bandage — stops bleeding" data-th="ผ้าพันแผล — หยุดเลือด">Bandage — stops bleeding</li>
+          <li data-en="Splint — fixes bone fractures" data-th="เฝือก — รักษากระดูกหัก">Splint — bone fractures</li>
+          <li data-en="Tourniquet — severe limb bleeding" data-th="สายรัดห้ามเลือด">Tourniquet — limb bleeding</li>
+        </ul>
+      </div>
+      <div class="ic">
+        <div class="il" data-en="MEDICINES" data-th="ยา">MEDICINES</div>
+        <ul>
+          <li data-en="PainKiller — reduces pain" data-th="ยาแก้ปวด">PainKiller — reduces pain</li>
+          <li data-en="Energy Drink — restores energy" data-th="เครื่องดื่มชูกำลัง">Energy Drink — energy</li>
+          <li data-en="Morphine — heavy pain relief" data-th="มอร์ฟีน — ระงับปวดหนัก">Morphine — heavy pain relief</li>
+          <li data-en="Epinephrine — revives unconscious" data-th="อีพิเนฟรีน — ฟื้นสติ">Epinephrine — revives</li>
+        </ul>
+      </div>
+      <div class="ic">
+        <div class="il" data-en="STATUS" data-th="สถานะ">STATUS</div>
+        <ul>
+          <li data-en="Healthy / Unhealthy" data-th="แข็งแรง / ไม่แข็งแรง">Healthy / Unhealthy</li>
+          <li data-en="Conscious / Unconscious" data-th="มีสติ / หมดสติ">Conscious / Unconscious</li>
+          <li data-en="No Pain → Extreme Pain" data-th="ไม่เจ็บ → เจ็บมาก">No Pain → Extreme Pain</li>
+          <li data-en="BloodBag — for others only" data-th="ถุงเลือด — สำหรับคนอื่น">BloodBag — others only</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S16: CLOSING ═══ -->
+<div class="sl" id="s16">
+  <div class="emb" style="font-size:56px">⚔️</div>
+  <div style="font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:6px;color:var(--gold);margin-bottom:10px" data-en="END OF BRIEFING" data-th="สิ้นสุดการบรีฟฟิ้ง">END OF BRIEFING</div>
+  <div class="mtl"><span data-en="WELCOME TO" data-th="ยินดีต้อนรับสู่">WELCOME TO</span> <span style="color:var(--green)" data-en="THE UNIT" data-th="หน่วย">THE UNIT</span></div>
+  <div style="font-size:15px;color:var(--muted);text-align:center;margin:10px 0 20px" data-en="Serve with honor. Fight with discipline. Protect your brothers." data-th="รับใช้ด้วยเกียรติ ต่อสู้ด้วยวินัย ปกป้องเพื่อนร่วมรบ">Serve with honor. Fight with discipline. Protect your brothers.</div>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+    <div style="background:var(--card);border:1px solid var(--green);border-radius:6px;padding:12px 24px;text-align:center">
+      <div style="font-family:'Oswald',sans-serif;font-size:24px;color:var(--green)">9ID</div>
+      <div style="font-size:11px;color:var(--muted)" data-en="Air Assault Division" data-th="กองพลจู่โจมทางอากาศ">Air Assault Division</div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--gold);border-radius:6px;padding:12px 24px;text-align:center">
+      <div style="font-family:'Oswald',sans-serif;font-size:24px;color:var(--gold)">2ID</div>
+      <div style="font-size:11px;color:var(--muted)" data-en="Mechanized Division" data-th="กองพลยานยนต์">Mechanized Division</div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--blue);border-radius:6px;padding:12px 24px;text-align:center">
+      <div style="font-family:'Oswald',sans-serif;font-size:24px;color:var(--blue)">T-72</div>
+      <div style="font-size:11px;color:var(--muted)" data-en="Main Battle Tank" data-th="รถถังหลัก">Main Battle Tank</div>
+    </div>
+  </div>
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
